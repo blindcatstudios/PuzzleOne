@@ -1,0 +1,6 @@
+<Modules>
+  <Module PersistentId="2953E807-8210-BACD-A3CF-99EA3432F44D" ModuleId="Assembly-CSharp-vs" />
+  <Module PersistentId="UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" ModuleId="UnityEngine" />
+  <Module PersistentId="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="mscorlib" />
+  <Module PersistentId="D5013235-5A28-FA6F-5A8C-262E7385590D" ModuleId="Assembly-CSharp-Editor-vs" />
+</Modules>
