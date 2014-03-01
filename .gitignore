@@ -5,9 +5,11 @@ UnityLockfile
 *.pidb
 *.unityproj
 .DS_Store
-/Library/FailedAssetImports.txt
-/Library/cache/
-/Library/previews/
-/Library/ScriptAssemblies
-/obj
-/Temp
+src/Library/FailedAssetImports.txt
+src/Library/cache/
+src/Library/previews/
+src/Library/ScriptAssemblies/
+src/obj/
+Temp/
+src/_ReSharper.dddddddd-csharp/
+src/_ReSharper.src-csharp

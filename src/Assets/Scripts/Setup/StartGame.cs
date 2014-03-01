@@ -13,8 +13,8 @@ public class StartGame : MonoBehaviour
 	{
 	    //DummyObjects[DummyObjects.Length - 1].InitializeDual(ColorID.Purple);
 		int randomStart = Random.Range(10,340);
-		bool oneDual = true;
-		bool twoDual = true;
+		bool oneDual = false;
+		bool twoDual = false;
 		int previousColor = -1;
 	    int delay = 0;
 	    int i;
@@ -38,8 +38,8 @@ public class StartGame : MonoBehaviour
 				dualColor = ColorID.Purple;
 				
 				dualObject.InitializeDual(dualColor, i, TogglePosition.Open);
-                dualObject.GrabToggle().CurrentZone = new LockedZone(2);
-			    ((LockedZone)dualObject.GrabToggle().CurrentZone).DrawZone(dualObject.GrabDual().PositionOpened);
+                //dualObject.GrabToggle().CurrentZone = new LockedZone(2);
+                //((LockedZone)dualObject.GrabToggle().CurrentZone).DrawZone(dualObject.GrabDual().PositionOpened);
                 PieSlice.CreatePaintSliceNormal(i, 360f / dumbNumberOfToggles, ColorID.Purple, delay / 2f);
 				continue;
 			}
@@ -62,7 +62,7 @@ public class StartGame : MonoBehaviour
             color2 = ColorID.RandomPrimaryColor();
         } while (previousColor == color2 || color2 == ColorID.Red);
 	    //Debug.Log("gbjwbgjwt " + color2);
-        gameObject2.InitializeNormal(color2, i, TogglePosition.Closed);
+        gameObject2.InitializeNormal(color2, i, TogglePosition.Open);
 	    gameObject2.GrabToggle().CurrentZone = new DualColorZone(color2, ColorID.Red);
         PieSlice.CreatePaintSliceDual(i, 360f / dumbNumberOfToggles, color2,ColorID.Red, delay / 2f);
 	    

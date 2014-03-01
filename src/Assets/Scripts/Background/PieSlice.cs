@@ -1,12 +1,11 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
-using System.Collections;
 
 public static class PieSlice
 {
     const float spaceBetween = 11f;
     const int number = 15;
-    static Object m_PaintObject = null;
+    static Object m_PaintObject;
 
     static PieSlice()
     {

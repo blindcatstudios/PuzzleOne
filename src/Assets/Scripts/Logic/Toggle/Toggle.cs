@@ -43,10 +43,21 @@ public class DualColorZone : Zone
 
     public override bool Leave(Toggle toggle, Toggle sender)
     {
+        int toColor = -1;
+        int fromColor = -1;
         if (toggle is IDualPosition && ((IDualPosition)toggle).CurrentPosition == TogglePosition.Open)
-            toggle.SetColor(m_ColorIn);
+        {
+            toColor = m_ColorIn;
+            fromColor = m_ColorOut;
+        }
         else
-            toggle.SetColor(m_ColorOut);
+        {
+            toColor = m_ColorOut;
+            fromColor = m_ColorIn;
+        }
+
+        toggle.SetColor(toColor);
+        toggle.AddColorLerp(ColorID.DefaultColors[fromColor], ColorID.DefaultColors[toColor], 0.3f, 0.8f);
         return true;
     }
 }
