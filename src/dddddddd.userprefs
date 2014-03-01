@@ -1,0 +1,23 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Background/BackgroundParticleSystem/BackgroundParticleSystemController.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Background/BackgroundParticleSystem/BackgroundParticleSystemController.cs" Line="48" Column="66" />
+      <File FileName="Assets/Scripts/Behavior/CenterCircleTouch.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Logic/Toggle/ToggleNormal.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Logic/Toggle/Toggle.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Setup/StartGame.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Logic/Controller.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Logic/Toggle/ToggleDual.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Helpers/ColorID.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Setup/ScriptGrab.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Background/PieSlice.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Easing/Easing.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Background/BackgroundParticleSystem/BackgroundParticleSystemController.cs" Line="48" Column="66" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
