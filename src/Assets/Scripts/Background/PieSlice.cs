@@ -16,6 +16,15 @@ public static class PieSlice
     {
         var radialStart = centerRadial - (distance / 2f);
         var radialEnd = centerRadial + (distance / 2f);
+
+//		var startVectorLeft = RadialToCoordinate(radialStart, 0,-10);
+//		var startVectorRight = RadialToCoordinate(radialEnd, 0,-10);
+//		var endVectorLeft = RadialToCoordinate(radialStart, 200,-10);
+//		var endVectorRight = RadialToCoordinate(radialEnd, 200,-10);
+//		
+//		VLiner.CreateDottedLine(startVectorLeft, endVectorLeft);
+//		VLiner.CreateDottedLine(startVectorRight, endVectorRight);
+
         var gameObjects = new List<GameObject>();
 
         for (float y = radialStart; y < radialEnd; y += spaceBetween / 3.3f) //radial
@@ -36,6 +45,16 @@ public static class PieSlice
     {
         var radialStart = centerRadial - (distance / 2f);
         var radialEnd = centerRadial + (distance / 2f);
+
+//		var startVectorLeft = RadialToCoordinate(radialStart, 0,-10);
+//		var startVectorRight = RadialToCoordinate(radialEnd, 0,-10);
+//		var endVectorLeft = RadialToCoordinate(radialStart, 200,-10);
+//		var endVectorRight = RadialToCoordinate(radialEnd, 200,-10);
+//		
+//		VLiner.CreateDottedLine(startVectorLeft, endVectorLeft);
+//		VLiner.CreateDottedLine(startVectorRight, endVectorRight);
+
+
         var gameObjects = new List<GameObject>();
         for (float y = radialStart; y < radialEnd; y += spaceBetween / 3.3f) //radial
         {
@@ -145,11 +164,11 @@ public static class PieSlice
 		backgroundColorSlice.renderer.material.color = ColorID.DefaultBackgroundColor[colorID];//new Color(250f/255f,190f/255f,192f/255f);
     }
 
-    private static Vector3 RadialToCoordinate(float radial, float distance)
+    private static Vector3 RadialToCoordinate(float radial, float distance, float z = 20f)
     {
         float x = Mathf.Cos(radial * Mathf.Deg2Rad);
         float y = Mathf.Sin(radial * Mathf.Deg2Rad);
 
-        return new Vector3(0f + (x * distance), 0f + (y * distance), 20f);
+        return new Vector3(0f + (x * distance), 0f + (y * distance), z);
     }
 }
