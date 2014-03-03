@@ -13,3 +13,4 @@ src/obj/
 Temp/
 src/_ReSharper.dddddddd-csharp/
 src/_ReSharper.src-csharp
+*.dwlt
