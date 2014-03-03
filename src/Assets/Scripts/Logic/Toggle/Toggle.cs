@@ -57,7 +57,8 @@ public class DualColorZone : Zone
         }
 
         toggle.SetColor(toColor);
-        toggle.AddColorLerp(ColorID.DefaultColors[fromColor], ColorID.DefaultColors[toColor], 0.3f, 0.8f);
+		toggle.AddColorLerp(ColorID.DefaultColors[fromColor], ColorID.DefaultColors[toColor], 0.45f, 0.6f);
+
         return true;
     }
 }
